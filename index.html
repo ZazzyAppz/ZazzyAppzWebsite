@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zazzy - Fun & Chaotic Games</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes colorCycle {
+            0% { background-color: red; }
+            25% { background-color: yellow; }
+            50% { background-color: lime; }
+            75% { background-color: cyan; }
+            100% { background-color: red; }
+        }
+        .crazy-text {
+            animation: bounce 1s infinite alternate ease-in-out;
+        }
+        .spinning {
+            animation: spin 3s linear infinite;
+        }
+        .colorful {
+            animation: colorCycle 5s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white">
+    <header class="text-center py-10 bg-gradient-to-r from-yellow-400 to-orange-400 text-black shadow-lg spinning">
+        <h1 class="text-6xl font-extrabold crazy-text">Welcome to Zazzy!</h1>
+        <p class="text-2xl mt-3">Bringing chaos, fun, and creativity to gaming!</p>
+    </header>
+    
+    <section class="text-center py-10 bg-gradient-to-r from-green-400 to-teal-400 text-black rounded-lg shadow-xl mx-6 my-6 colorful">
+        <h2 class="text-4xl font-semibold crazy-text">Our Games</h2>
+        <div class="flex justify-center mt-6">
+            <div class="bg-gradient-to-r from-white to-gray-200 text-black p-6 rounded-lg shadow-lg w-64 mx-4 border-4 border-blue-500 spinning">
+                <h3 class="text-3xl font-bold text-red-500">Chaos Quests</h3>
+                <p class="mt-2 text-purple-700">A wild VR sandbox with physics-driven mini-games!</p>
+                <a href="https://zazzyappz.itch.io" class="mt-4 inline-block bg-red-500 text-white px-6 py-3 rounded-full hover:bg-red-700 crazy-text">Play Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="text-center py-6 bg-gradient-to-r from-blue-700 to-purple-700 text-white shadow-lg">
+        <p>&copy; 2025 <span class="text-yellow-300 font-bold">Zazzy</span>. All rights reserved.</p>
+        <p><a href="https://zazzyappz.itch.io" class="underline text-yellow-300 hover:text-yellow-500 spinning">Visit our Itch.io Page</a></p>
+    </footer>
+</body>
+</html>
